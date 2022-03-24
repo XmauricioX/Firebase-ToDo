@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/solar/bootstrap.min.css" integrity="sha384-NCwXci5f5ZqlDw+m7FwZSAwboa0svoPPylIW3Nf+GBDsyVum+yArYnaFLE9UDzLd" crossorigin="anonymous">
+  <title>FireBaseCrud</title>
+</head>
+<body class="bg-dark">
+  <div class="container p-4"> 
+    <div class="row">
+      <div class="col-mb-6 ml-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            
+            <h2>Add & Edit Task</h2>
+
+                <form id="task-form">
+            
+                  <label for="title">Title:</label>
+                  <input class="form-control mb-3" id="task-title" type="text" placeholder="Task Title">
+            
+                  <label for="description">Description:</label>
+                  <textarea class="form-control mb-3" id="task-description" rows="3" placeholder="Task Description..."></textarea>
+            
+                  <button class="btn btn-success" id="btn-task-save">Save</button>
+            
+                </form>
+                
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" id="tasks-container"></div>
+
+    </div>
+  </div>
+
+
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
